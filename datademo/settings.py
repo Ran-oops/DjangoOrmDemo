@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'prac',
+    'fullVersionDemo',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'datademo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pracdatabase',
+        'NAME': 'fullVersionORM',
         'HOST':'localhost',
         'USER':'root',
         'PASSWORD':'831015',

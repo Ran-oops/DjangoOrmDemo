@@ -10,7 +10,7 @@ from django.db import models
 #学生和老师之间是多对多
 
 # class SUBJECT(models.Model):
-    
+
 #     name = models.CharField(max_length=50)
 #     price = models.IntegerField()
 
@@ -54,5 +54,4 @@ class Book(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=32)
 
-    publisher = models.ForeignKey('Publisher', related_name='person_book', related_query_name='ooxx')
-    
+    publisher = models.ForeignKey('Publisher', related_name='person_book', related_query_name='yy')

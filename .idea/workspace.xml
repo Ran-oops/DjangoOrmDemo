@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d34130d-906c-4dbd-8a63-6b8cf148fdb0" name="Default Changelist" comment="" />
+    <list default="true" id="6d34130d-906c-4dbd-8a63-6b8cf148fdb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullVersionDemo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datademo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/datademo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datademo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/datademo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/prac/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/prac/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WQlxMqJue6cKaHlGV01tcCLhY6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,6 +29,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fullVersionDemo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Django_database\datademo\fullVersionDemo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Django_database\datademo\fullVersionDemo" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -42,9 +66,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1579090001080">
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1579251029182">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579090001080" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579251029182" />
+    <state x="228" y="0" width="840" height="726" key="search.everywhere.popup" timestamp="1579267632061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="228" y="0" width="840" height="726" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1579267632061" />
   </component>
 </project>

@@ -1,3 +1,35 @@
+## orm入门知识
+#### Book和Publisher多对一的关系
+#### 在属于多的类里面创外键   
+```models.py
+from django.db import models
+
+# Create your models here.
+class Publisher(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=32)
+
+
+class Book(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=32)
+
+    publisher = models.ForeignKey('Publisher', related_name='person_book', related_query_name='yy')
+
+```
+```
+from django.conf.urls import include, url
+from django.contrib import admin
+from . import views
+
+urlpatterns = [
+
+    url(r'showbook$',views.showbook, name='showbook')
+]
+
+```
+
+```
 from django.shortcuts import render
 
 from django.http import HttpResponse
@@ -8,33 +40,6 @@ from django.core.urlresolvers import reverse
 from prac.models import Publisher, Book
 
 # Create your views here.
-
-# def index(request):
-    #一对多查询，根据subject查询学生
-    ##正向查询
-    ##1.查询java学科
-def addbook(request):
-    ob = Book()
-    ob.id=3
-    ob.name = 'learn to be happy'
-    ob.publisher_id =3
-    ob.save()
-
-    return HttpResponse('hi, add')
-
-
-def deletebook(request):
-    ob= Book.objects.get(id=1)
-    ob.delete()
-    return HttpResponse('Hi, delete')
-
-def updatebook(request):
-    ob = Book.objects.filter(id=1).update(name = 'python')
-
-    # ob.name = '我要学python'
-    # ob.save()
-
-    return HttpResponse('hi, update')
 
 def showbook(request):
     # dict={}
@@ -75,110 +80,12 @@ def showbook(request):
     # ret = Publisher.objects.filter(id=1).values_list('yy__name')
     # print('this is =================ret:', ret)
     # return HttpResponse('hi,showbook')
-    #
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+```
+一对多
+一是主表
+多是子表
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[查看原文](https://www.cnblogs.com/aaronthon/p/9520832.html)
+理解ORM:[查看原文](https://www.cnblogs.com/welan/p/9858747.html)
