@@ -9,7 +9,7 @@ class Book(models.Model):
 
     #一个出版社有多本书，关联字段要写在多的一方
     # 不用命名为publish_id，因为django为我们自动就加上了_id
-    publish = models.ForeignKey("Publish")  #foreignkey（表名）建立的一对多关系
+    publish = models.ForeignKey("Publish")  #foreignkey（表名）建立的一对多关系,publish就是主表
     # publish是实例对象关联的出版社对象
     authorlist = models.ManyToManyField("Author")  #建立的多对多的关系
     def __str__(self):  #__str__方法使用来吧对象转换成字符串的，你返回啥内容就打印啥
@@ -29,4 +29,4 @@ class Author(models.Model):
 class AuthorDeital(models.Model):
     tel = models.IntegerField()
     addr = models.CharField(max_length=32)
-    author = models.OneToOneField("Author")  #建立的一对一的关系
+    author = models.OneToOneField("Author", on_delete=models.CASCADE)  #建立的一对一的关系

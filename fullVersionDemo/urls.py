@@ -12,7 +12,13 @@ urlpatterns = [
     url(r'^addAuthDetail',views.addAuthDetail, name='addAuthDetail'),
     url(r'^deleteAuthDetail',views.deleteAuthDetail, name='deleteAuthDetail'),
     url(r'^updateAuthDetail',views.updateAuthDetail, name='updateAuthDetail'),
-    url(r'^showAuthDetail',views.showAuthDetail, name='showAuthDetail')
+    url(r'^showAuthDetail',views.showAuthDetail, name='showAuthDetail'),
+
+    url(r'^addBookAuthor',views.addBookAuthor, name='addBookAuthor'),
+    url(r'^deleteBookAuthor',views.deleteBookAuthor, name='deleteBookAuthor'),
+    url(r'^updateBookAuthor',views.updateBookAuthor, name='updateBookAuthor'),
+    url(r'^showBookAuthor',views.showBookAuthor, name='showBookAuthor')
+
 ]
 
 
