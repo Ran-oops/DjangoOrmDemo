@@ -126,7 +126,7 @@ def showAuthDetail(request):
 
     return HttpResponse('hi, showAuthDetail')
 
-#========================OneToOne Demo Begin=================================
+#========================OneToOne Demo End=================================
 
 #========================ManyToMany Demo Begin=================================
 #一本书可能会有多个作者，一个作者也可以写多本书，所以作者和书籍的关系就是多对多的关联关系(many-to-many)
